@@ -13,16 +13,12 @@ struct ImageItemView: View {
     
     var body: some View {
         HStack {
-            Spacer()
             Image(img)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Spacer()
         }
-        .padding(.vertical, 40)
-        .background(.yellow)
         .cornerRadius(20)
-        .frame(width: UIScreen.main.bounds.width / 2)
+        .frame(width: UIScreen.main.bounds.width / 2.5 )
     }
 }
 
